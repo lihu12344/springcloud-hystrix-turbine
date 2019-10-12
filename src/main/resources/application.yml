@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: hystrix-turbine
+  cloud:
+    consul:
+      host: 172.18.0.20
+      port: 8500
+
+turbine:
+  app-config: feign-consumer
+  cluster-name-expression: new String("default")
+  combine-host-port: true
